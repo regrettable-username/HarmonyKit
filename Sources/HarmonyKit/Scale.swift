@@ -9,7 +9,7 @@ public struct Scale {
         self.type = type
     }
 
-    func notes(for octaves: Int) -> Notes {
+    public func notes(for octaves: Int) -> Notes {
         if octaves < 1 {
             return []
         }
