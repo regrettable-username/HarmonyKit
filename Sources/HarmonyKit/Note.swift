@@ -3,9 +3,9 @@ import Foundation
 public typealias Notes = [Note]
 
 public struct Note {
-    let name: LetterName
-    let accidental: Accidental
-    let octave: Int
+    public let name: LetterName
+    public let accidental: Accidental
+    public let octave: Int
     
     public var midi: Int {
         return self.chromaticValue + (octave + 2) * 12
